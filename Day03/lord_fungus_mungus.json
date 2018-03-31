@@ -1,0 +1,38 @@
+{
+    "primary_info": {
+        "weapon": "lazer cannon",
+        "motto": "go go gooo",
+        "movie": "star wars - Jedi the last"
+    },
+    "max_point": 385,
+    "min_point": 35,
+    "matches": [
+        {
+            "game_day": 1,
+            "vs": "lord rikken",
+            "player_score": 200,
+            "opponent_score": 145
+        },
+        {
+            "game_day": 2,
+            "vs": "evelyn",
+            "player_score": 189,
+            "opponent_score": 485
+        },
+        {
+            "game_day": 3,
+            "vs": "moka pinku",
+            "player_score": 21,
+            "opponent_score": 18
+        },
+        {
+            "game_day": 4,
+            "vs": "draymmeor",
+            "player_score": 53,
+            "opponent_score": 56
+        }
+    ],
+    "current_rank": 3,
+    "nickname": "lord fungus mungus",
+    "player_id": "21454834"
+}

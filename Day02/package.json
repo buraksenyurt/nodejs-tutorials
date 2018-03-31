@@ -1,0 +1,29 @@
+{
+  "name": "fierce-earth-61739",
+  "version": "1.0.0",
+  "description": "a simple rest api for homeworks",
+  "main": "homework.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node personal_board.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/fierce-earth-61739.git"
+  },
+  "keywords": [
+    "daily",
+    "tasks",
+    "scrum",
+    "board",
+    "node.js",
+    "express",
+    "rest"
+  ],
+  "author": "burak selim senyurt",
+  "license": "ISC"
+}

@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<title>Mocha Tests</title>
+<link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/should@13.2.1/should.js"></script>
+    <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+
+    <script>mocha.setup('bdd')</script>
+    <script src="sum.js"></script>
+    <script src="sum.test.js"></script>
+
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>

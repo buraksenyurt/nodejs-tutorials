@@ -1,0 +1,32 @@
+html
+    head
+        meta(charset='utf-8')
+        link(href='https://fonts.googleapis.com/css?family=Chewy',rel='stylesheet')
+        title I love this game
+    body(style='width:410px;font-family:Chewy,cursive')
+        h2(id='myId',style='background-color:darkblue;color:white') İ s t a t i s t i k l e r
+        p
+            h3(style='background-color:red;color:white') En iyi takımlar
+            p.
+                NBA tarihinde tüm zamanların en iyi takımları   
+            ul
+                each team in teams
+                    b
+                        li=team
+        p
+            h3(style='background-color:green;color:white') En iyi oyuncular
+            p.
+                NBA tarihinin bugüne kadar gelmiş geçmiş en iyi oyuncuları
+            mixin player-card(player)
+                div(style='background-color:lightgray').player-card
+                    a(href=player.url)
+                        div.player-name=player.name
+                    p
+                        img.player-photo(src=player.photo)
+                    p
+                        i.heigth=player.height                        
+                    p
+                        i.bio=player.bio     
+                    p                                        
+            for player in players
+                +player-card(player)

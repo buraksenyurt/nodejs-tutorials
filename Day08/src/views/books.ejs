@@ -1,0 +1,42 @@
+<html>
+
+<head>        
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Welcome to <%=title%></h1>
+        <blockquote>
+           <p><%=summary%></p>
+        </blockquote>
+    </div>
+    <div class='container'>    
+        <%for(var i=0;i<nav.length;i++){%>
+        <div class="row">
+            <p><a href="<%=nav[i].link%>"><%=nav[i].title%></a></p>
+        </div>
+        <%}%>         
+    </div>
+    <div class='container'>
+        <%for(var i=0;i<books.length;i++){%>
+            <div class="row p-3 bg-light text-dark rounded">
+                <dl>                    
+                    <dd class='text-primary'><%=books[i].title%></dd>
+                    <dd><%=books[i].genre%></dd>
+                    <dd><%=books[i].author%></dd>                    
+                </dl>
+            </div>
+            <hr/>
+        <%}%>
+    </div>
+
+
+    <script src="/js/jquery.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

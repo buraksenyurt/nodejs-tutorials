@@ -1,0 +1,16 @@
+{
+  "name": "helloforms",
+  "version": "1.0.0",
+  "description": "a simple forms application for cross platform",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "burak selim senyurt",
+  "license": "ISC",
+  "keywords": "electron,nodejs,javascript,html,css",
+  "devDependencies": {
+    "electron": "^3.0.5"
+  }
+}

@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 console.log(process.platform)
 
 let win
@@ -6,7 +6,7 @@ let win
 function createWindow() {
     win = new BrowserWindow({ width: 640, height: 480 })
     win.loadFile('index.html')
-    win.webContents.openDevTools()
+    //win.webContents.openDevTools()
     win.on('closed', () => {
         win = null
     })

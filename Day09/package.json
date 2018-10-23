@@ -9,7 +9,6 @@
   },
   "author": "burak selim senyurt",
   "license": "ISC",
-  "keywords": "electron,nodejs,javascript,html,css",
   "devDependencies": {
     "electron": "^3.0.5"
   }

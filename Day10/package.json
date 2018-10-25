@@ -1,0 +1,22 @@
+{
+  "name": "grpc-hello-world",
+  "version": "1.0.0",
+  "description": "a simple grpc sample",
+  "main": "server/index.js",
+  "dependencies": {
+    "grpc": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grpc",
+    "nodejs",
+    "client",
+    "server",
+    "microservices"
+  ],
+  "author": "Burak Selim Senyurt <burakselimsenyurt@gmail.com>",
+  "license": "ISC"
+}

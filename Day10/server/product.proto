@@ -1,0 +1,28 @@
+syntax = "proto3"; //Specify proto3 version.
+
+package products; //benzersiz bir paket ismi
+
+//Service. GRPC sunucusunun istemci tarafına sundugu servis sözlesmesi
+service ProductService {
+  rpc List (Empty) returns (ProductList);
+  rpc Insert (Product) returns (Empty);
+  rpc Get (ProductId) returns (Product);  
+}
+
+// Serviste kullanilan mesaj tipi
+message Product {
+  int32 id = 1;
+  string name = 2;
+  double listPrice = 3;
+}
+
+// Ornek bir liste
+message ProductList {
+  repeated Product Product = 1;
+}
+
+message ProductId {
+  int32 id = 1;
+}
+
+message Empty {}

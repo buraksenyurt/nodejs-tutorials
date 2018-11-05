@@ -1,0 +1,40 @@
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="divStatistics">
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            $.ajax({
+                url: '/report',
+                type: "GET",
+                success: function (result) {
+                    var layout = {
+                        xaxis: { autorange: true },
+                        yaxis: { autorange: true },
+                        legend: {
+                            x: 0,
+                            y:-0.5,
+                            yref: 'paper',
+                            font: {
+                                family: 'Tahoma',
+                                size: 16
+                            }
+                        },
+                        title: 'Haftalık sunucu istatistikleri (Akfit Servis/Gün)'
+                    };
+
+                    Plotly.newPlot('divStatistics', result, layout);
+                },
+                error: function (error) {
+                    console.log('error ${error}')
+                }
+            })
+        });
+
+    </script>
+</body>
